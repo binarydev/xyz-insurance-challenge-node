@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: xyz_insurance
+    container_name: xavier_web
     ports:
       - 3001:3001
     links:
@@ -13,11 +13,6 @@ services:
     environment:
       - NODE_PATH=/app/frontend/src/
       - MONGO_HOST=mongodb
-      - MONGO_PORT=27017
-      - MONGO_DB_NAME=xavier
-      - WEB_API_PORT=3001
-      - NODE_ENV=development
-      - REACT_APP_XAVIER_PRIVATE_KEY=long_indiscernable_string_here
   mongodb:
     container_name: "mongodb"
     image: 'mongo:4.0'
