@@ -21,7 +21,7 @@ Tech stack:
 
 ### Configuration
 
-1. Run `yarn install`
+1. Run `yarn install:all`
 2. Copy `.env.sample` to `.env` and update the variables to match your environment and desired settings.
 3. Once you have started the server (below), there are 2 convenience routes that you can use to create your first user by making the following request and then deleting the route from `./routes/users.js` before restarting your server:
 
