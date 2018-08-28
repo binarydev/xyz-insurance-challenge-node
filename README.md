@@ -17,6 +17,8 @@ Tech stack:
 4. Task 4 - Instead of sending quotes instantly, batch them into hourly emails, so that recipients of multiple quotes only get 1 email an hour. A message queue and a cronjob would be handy here.
 5. Task 5 - Compute metrics for the service using logfiles from the app server. **(Complete)**
 
+Personal bonus I've added: full dockerization, and the live demo at http://xavier-demo.binary-dev.com/ is actually using this dockerized version.
+
 ## Instructions for starting app
 
 ### Configuration
