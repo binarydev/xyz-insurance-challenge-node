@@ -1,0 +1,11 @@
+[​ 2017-02-27T18:58:18+00:00​ ] request id = 1234567890, quote status = success, price = 50000.00
+[​ 2017-02-27T18:59:53+00:00​ ] request id = 0987654321, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:01:53+00:00​ ] request id = 0987654322, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:21:53+00:00​ ] request id = 0987654323, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:22:53+00:00​ ] request id = 0987654324, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:32:53+00:00​ ] request id = 0987654325, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:53:53+00:00​ ] request id = 0987654326, quote status = failure, reason = jet too old
+[​ 2017-02-27T19:58:18+00:00​ ] request id = 1234567891, quote status = success, price = 150000.25
+[​ 2017-02-27T20:10:18+00:00​ ] request id = 1234567892, quote status = success, price = 20000.22
+[​ 2017-02-27T20:58:18+00:00​ ] request id = 1234567893, quote status = success, price = 40000.10
+[​ 2017-02-27T20:59:18+00:00​ ] request id = 1234567894, quote status = success, price = 120000.2
