@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xyz_insurance
+    ports:
+      - 3001:3001
+    links:
+      - mongodb:mongodb
+    environment:
+      - NODE_PATH=/app/frontend/src/
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_DB_NAME=xavier
+      - WEB_API_PORT=3001
+      - NODE_ENV=development
+      - REACT_APP_XAVIER_PRIVATE_KEY=long_indiscernable_string_here
+  mongodb:
+    container_name: "mongodb"
+    image: 'mongo:4.0'
+    # OPTIONAL VOLUME if you want to persist your mongo data
+    #volumes:
+    #  - ~/docker-data/mongodb/musing:/data/db
+    # OPTIONAL PORT BINDINGS if you want to make it available for direct access as well
+    #ports:
+    #  - 27017:27017
+    expose:
+      - 27017

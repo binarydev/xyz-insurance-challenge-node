@@ -1,0 +1,25 @@
+{
+  "name": "xavier-backend",
+  "version": "0.0.1",
+  "engines": {
+    "node": "8.10.0"
+  },
+  "private": true,
+  "scripts": {
+    "start:prod": "cd frontend && NODE_PATH='./src/' yarn build && cd ../ && node ./bin/www",
+    "start:dev": "nodemon --inspect ./bin/www",
+    "install:all": "yarn install && cd frontend/ && yarn install"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "express": "~4.16.0",
+    "mongoose": "^5.2.9",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
